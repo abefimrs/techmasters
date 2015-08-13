@@ -14,9 +14,7 @@
        $array = str_split($binary);
        //print_r($array);
        $sum = 0;
-       for($i = count($array)-1; $i >= 0; $i--) {
-         //echo $array[$i];
-         //echo $i;
+       for($i = count($array)-1; $i >= 0; $i--) {         
          if($array[$i] == 0) {
             //echo $sum = 1; 
          } else {
