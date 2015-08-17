@@ -1,7 +1,6 @@
 <?php
-
     error_reporting(0);
-
+    
     function getBinary($number) {
         $binary = array();
         $bit = $number % 2;
@@ -10,8 +9,7 @@
             getBinary($number);
             echo $bit;
         }        
-    }
-    
+    }    
     
     function getDecimalFrmBinary($binary) {
         $decimal = 0;
@@ -44,7 +42,6 @@
             
             <input type="submit" value="Submit">
             
-        </form>
-        
+        </form>        
     </body>
 </html>
