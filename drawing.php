@@ -16,10 +16,10 @@
 function draw() {
     
     for ($i = 1; $i <= 7; $i++) {
-        
-        for($k = $i; $k > ($k +=$k); $k--) {
-            //echo "X";
-            echo $k;            
+        //$rol = 
+        for($k = $i; $k > 0; $k--) {
+            echo "X";
+            //echo $k - $i;            
         }
         
         echo "<br />";        
