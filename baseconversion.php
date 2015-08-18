@@ -21,12 +21,18 @@
     }
 
     function getBaseNumber($number = '',$toBase = '') {
-       
+        $hexaDigits = array('1','2','3','4','5','6','7','8','9','A','B','C','D','E','F');
+        
         $str = '';
         while ($number > 0){
             $bin = $number % $toBase;
             $number = round($number/$toBase, 0, PHP_ROUND_HALF_DOWN);
-            $str = $bin.$str;
+            if($toBase == 16) {
+                $str = $hexaDigits[$bin].$str;
+            } else {
+                $str = $bin.$str;
+            }
+            
         }
         return $str;
     }
@@ -43,7 +49,7 @@
     $octal = getBaseNumber($decimal,8);
     $hexadecimal =  getBaseNumber($decimal,16);  
     
-    echo base_convert($decimal,10,8); 
+    //echo base_convert($decimal,10,16); 
             
     
  ?>   
