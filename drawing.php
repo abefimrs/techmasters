@@ -16,12 +16,11 @@
 function draw() {
     
     for ($i = 1; $i <= 7; $i++) {
-        //$rol = 
-        for($k = $i; $k > 0; $k--) {
+        $rol = round(7/2);
+        for($k = 1; $k < $i; $k++) {
             echo "X";
-            //echo $k - $i;            
-        }
-        
+            if($k == $rol) { $k = 4;}
+        }        
         echo "<br />";        
     }
     
