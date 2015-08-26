@@ -13,68 +13,30 @@
 
  */
 
-function draw() {
-    
-    for ($i = 1; $i <= 7; $i++) {
-        $rol = round(7/2);
-        for($k = 1; $k < $i; $k++) {
-            echo "X";
-            if($k == $rol) { $k = 4;}
-        }        
-        echo "<br />";        
-    }
-    
-}
-
-    draw();
-
-  /*  
-    function create_pyramid($limit) {
-    for($row = 1; $row < $limit; $row ++) {
-        $stars = str_repeat('*', ($row - 1) * 2 + 1);
-        $space = str_repeat(' ', $limit - $row);
-        echo $space . $stars . '<br/>';
-    }
-}
-echo "<pre>" ;
-create_pyramid(7);
-
-*/
-/*
-    
-    function create_pyramid($limit) {
-        
-        for($row = 1; $row <= $limit; $row ++) {
-
-            echo round(($limit/2)*$row);
-            echo '<br>';
-
-        }
-    }
-    
-    echo "<pre>";
-    
-    create_pyramid(7);
-*/
-
-/*
-        7/2-1 = 
-*/
+function draw($limit) {
+   
     
     $i = 1;
-    $limit = 7;
     $cond = TRUE;
-    while(0 < $limit) {
+    //while($i < $limit) {
+    while($i!=0) {
         
-        if($cond) {
-            echo $i;
+        if($cond) {            
+            echo str_repeat('X', $i);
+            echo "<br />";
             $i++;
-            if($i == 4) 
+            if($i == round($limit/2) )
                 $cond = FALSE;
+           
         } else {
-            echo $i;
+            echo str_repeat('X', $i);
+            echo "<br />";
             $i--;
             
         }
         
     }
+}
+
+
+draw(100);
