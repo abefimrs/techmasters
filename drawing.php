@@ -27,3 +27,54 @@ function draw() {
 }
 
     draw();
+
+  /*  
+    function create_pyramid($limit) {
+    for($row = 1; $row < $limit; $row ++) {
+        $stars = str_repeat('*', ($row - 1) * 2 + 1);
+        $space = str_repeat(' ', $limit - $row);
+        echo $space . $stars . '<br/>';
+    }
+}
+echo "<pre>" ;
+create_pyramid(7);
+
+*/
+/*
+    
+    function create_pyramid($limit) {
+        
+        for($row = 1; $row <= $limit; $row ++) {
+
+            echo round(($limit/2)*$row);
+            echo '<br>';
+
+        }
+    }
+    
+    echo "<pre>";
+    
+    create_pyramid(7);
+*/
+
+/*
+        7/2-1 = 
+*/
+    
+    $i = 1;
+    $limit = 7;
+    $cond = TRUE;
+    while(0 < $limit) {
+        
+        if($cond) {
+            echo $i;
+            $i++;
+            if($i == 4) 
+                $cond = FALSE;
+        } else {
+            echo $i;
+            $i--;
+            
+        }
+        
+    }
