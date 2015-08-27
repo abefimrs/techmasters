@@ -30,7 +30,7 @@
             if($toBase == 16) {
                 $str = $hexaDigits[$bin].$str;
             } else {
-                $str = $bin.$str;
+                $str = $bin.','.$str;
             }
             
         }
@@ -45,8 +45,8 @@
     $decimal = getDecimal($fromNumber,$base);
     
     // Convert into desier number
-    $binary = getBaseNumber($decimal,2);
-    $octal = getBaseNumber($decimal,8);
+    //$binary = getBaseNumber($decimal,2);
+    //$octal = getBaseNumber($decimal,8);
     $hexadecimal =  getBaseNumber($decimal,16);  
     
     //echo base_convert($decimal,10,16); 
