@@ -1,5 +1,5 @@
 <?php
-//error_reporting(0);
+error_reporting(0);
 /*
   Write a PHP program where I can define a number and you will detect the base of the number and
   convert it to another base defined by me.
