@@ -23,6 +23,8 @@ function oops($type, $msg, $file, $line, $context) {
     echo "<hr><pre>";
     echo "Error code: $type<br/>";
     echo "Error message: $msg<br/>";
+    //print_r($context);
     echo "</pre><hr>";
     
 }
+
